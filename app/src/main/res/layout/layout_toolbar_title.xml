@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/drawable_gradient"
+    android:elevation="6dp"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_left_space">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_title_first"
+            android:id="@+id/toolbar_title_first"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/title_head_font_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_title_left"
+            android:id="@+id/toolbar_title_left"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/title_font_size"/>
+   </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+
+    <!--
+     android:background="?attr/colorPrimary"
+     !-->

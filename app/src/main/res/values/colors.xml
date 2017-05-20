@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E75E00</color>
+    <color name="colorPrimaryDark">#E75E00</color>
+    <color name="colorAccent">#E75E00</color>
+    <color name="color_background">#FF272737</color>
+    <color name="my_statusbar_color">#E75E00</color>
+    <color name="toolbar_back_color">#E75E00</color>
+    <color name="fab_back_color">#E75E00</color>
+    <color name="nav_back_color">#272737</color>
+    <color name="login_back_color">#272737</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_mid_black">#99000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="frame_color">#343445</color>
+    <color name="color_gray">#cbcbcb</color>
+    <color name="color_dark_gray">#939393</color>
+    <color name="color_share_gray">#FF9B9B9B</color>
+    <color name="button_color">#55c583</color>
+    <color name="remove_button_color">#FC4236</color>
+    <color name="read_more_color">#55C583</color>
+    <color name="main_color">#24323d</color>
+    <color name="tag_color">#007fcd</color>
+    <color name="source_color">#00c853</color>
+    <color name="main_back_color">#272737</color>
+    <color name="setting_item_color">#FF333345</color>
+    <color name="section_title_color">#E85E00</color>
+    <color name="color_unread_cover">#5032586A</color>
+    <color name="news_title_color">#DEFFFFFF</color>
+    <color name="news_describe_color">#99FFFFFF</color>
+    <color name="unread_news_describe_color">#8D8D96</color>
+    <color name="news_item_color">#FF333345</color>
+    <color name="setting_title_color">#DEFFFFFF</color>
+    <color name="setting_tag_color">#99FFFFFF</color>
+    <color name="unread_share_color">#8D8D96</color>
+
+    <color name="article_title_color">#FFFFFF</color>
+    <color name="article_content_color">#DEFFFFFF</color>
+    <color name="color_line">#1F000000</color>
+<!--    <color name="filter_section_color">#92989f</color> -->
+    <color name="filter_section_color">#EF6C00</color>
+    <color name="filter_divider_color">#cbcbcb</color>
+    <color name="filter_title_color">#D3FFFFFF</color>
+<!--    <color name="filter_unread_count_color">#cddc39</color> -->
+    <color name="filter_unread_count_color">#E85E00</color>
+    <color name="color_green">#41d1ad</color>
+    <color name="tap_to_add_source_color">#3FD1AC</color>
+    <color name="color_trans_white">#20FFFFFF</color>
+</resources>

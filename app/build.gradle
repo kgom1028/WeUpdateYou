@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'smartshooter'
+            keyPassword '123456'
+            storeFile file('E:/Development/Cocos2dx/Development/SmartShooter/keystore/key')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId 'com.zar.weupdateyou'
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 6
+        versionName "1.0.5"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/acra-4.6.1.jar')
+    compile files('libs/gson-2.7.jar')
+    compile files('libs/libs.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    // compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //  compile 'com.google.android.gms:play-services:9.4.0'
+    //compile 'com.github.wangjiegulu:RapidFloatingActionButton:1.0.3'
+    compile 'com.github.wangjiegulu:AndroidBucket:1.0.4'
+    compile 'com.github.wangjiegulu:ShadowViewHelper:1.0.0'
+    compile 'com.nineoldandroids:library:2.4.+'
+   // compile 'com.google.android.gms:play-services:9.0.1'
+    compile 'com.facebook.android:audience-network-sdk:4.+'
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile('io.fabric.sdk.android:fabric:1.3.14@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile project(':refresh')
+    compile project(':fabLib')
+    compile project(':mopub-sdk')
+}
+//apply plugin: 'com.google.gms.google-services'

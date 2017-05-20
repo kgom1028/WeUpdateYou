@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:background="@color/color_white">
+        <!--
+        <include
+            android:id="@+id/container_header"
+            layout="@layout/layout_actionbar"
+        />!-->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_toolbar"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_save_setting_background"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/main_back_color"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:height="@dimen/dimen_40dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/source_title"
+                        android:text="Aftonbladet"
+                        android:lines="1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                      android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/top_label"
+                        android:text="@string/top_title"
+                        android:lines="1"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:id="@+id/top_text"
+                        android:textColor="@color/color_dark_gray"
+                        android:text="Show All"
+                        android:lines="1"
+                        android:visibility="gone"
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:id="@+id/top_text_spinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/MyEditTextTheme"
+                        >
+
+
+                    </Spinner>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/keyword_lab"
+                        android:id="@+id/words_label"
+                        android:lines="1"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:textSize="@dimen/dimen_18sp"
+                        android:text=""
+                        android:maxLines="30"
+                        android:textColor="@color/color_white"
+                        android:textAlignment="textStart"
+                        android:id="@+id/words_edit"
+                        android:theme="@style/MyEditTextTheme"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:text="@string/keyword_explain"
+                        android:textSize="@dimen/dimen_12sp"
+                        android:textColor="@color/news_title_color"
+                        android:lines="3"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@drawable/drawable_remove"
+            android:id="@+id/saveBtn"
+            android:onClick="onClick"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_save"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/news_title_color"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/saveText"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello"> </string>
+    <string name="app_name">We Update You</string>
+    <string name="app_title"></string>
+    <string name="toolbar_title">We Update You</string>
+    <string name="toolbar_title_first">W</string>
+    <string name="toolbar_title_left">e Update You</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="xlistview_header_hint_normal">Tap to refresh</string>
+    <string name="xlistview_header_hint_ready">Tap to refresh</string>
+    <string name="xlistview_header_hint_loading">loading...</string>
+    <string name="xlistview_header_last_time">Last updated:</string>
+    <string name="xlistview_footer_hint_normal">see more</string>
+    <string name="xlistview_footer_hint_ready">Release the load more</string>
+    <string name="crash_toast_text">The App is crashed, please send the mail to developer.</string>
+    <string name="input_all_fields">Please input all fields.</string>
+    <string name="invalid_user">Invalid username and password.</string>
+    <string name="exist_user">The username is already exist.</string>
+    <string name="loading">loading</string>
+    <string name="share_text">Hey, I recommend you try http://weupdateyou.com a news app with news from the sources you trust!</string>
+    <string name="web_share_text">%1$s\nSent from http://weupdateyou.com</string>
+    <string name="article_share_text">%1$s\n%2$s\nSent from http://weupdateyou.com</string>
+    <string name="input_one_word">You should input one word for keyword  for web and youtube sources.</string>
+    <!-- menu-->
+    <string name="action_more">More</string>
+    <string name="action_share">Share</string>
+    <string name="manage_source">Manage Sources</string>
+    <string name="add_source">Add Source</string>
+    <string name="remove_source">Remove Source</string>
+    <string name="edit_source">Edit Source</string>
+    <string name="sign_out">Sign out</string>
+
+    <string name="copy_to_clipboard">Copy url to clipboard</string>
+    <string name="open_browser">Open in browser</string>
+    <string name="read_more">Read more</string>
+    <string name="refresh_page">Refresh page</string>
+    <string name="find_page">Find in page</string>
+    <string name="google_translate">Google translate</string>
+
+    <string name="news">News</string>
+    <string name="web">Web</string>
+    <string name="youtub">Youtube</string>
+    <string name="search_hint">   Search...</string>
+    <string name="top_title">Number of stories to show</string>
+    <string name="keyword_lab">Keywords to monitor</string>
+    <string name="action_save">Save</string>
+    <string name="action_search">Search</string>
+    <string name="action_next">Next</string>
+    <string name="action_prev">Prev</string>
+    <string name="action_add_source">Add source</string>
+    <string name="filter_source">Filter source</string>
+    <string name="filter_tag">Filter tag</string>
+    <string name="add_news">News</string>
+    <string name="add_web">Web</string>
+    <string name="add_youtube">Youtube</string>
+    <string name="sort_shares">Sort by shares</string>
+    <string name="sort_time">Sort by time</string>
+    <string name="clear_filter">Clear filters</string>
+    <string name="popular_sources">Popular Sources</string>
+    <string name="remove">Remove</string>
+    <string name="keyword_explain">You can monitor serveral keywords by separating them with a coma eg. Google, Apple, Amazon</string>
+    <string name="article">Article</string>
+    <string-array name="top_array">
+        <item>Show All</item>
+        <item>Only Keywords</item>
+        <item>Top 1</item>
+        <item>Top 2</item>
+        <item>Top 3</item>
+        <item>Top 4</item>
+        <item>Top 5</item>
+        <item>Top 6</item>
+        <item>Top 7</item>
+        <item>Top 8</item>
+        <item>Top 9</item>
+        <item>Top 10</item>
+    </string-array>
+
+    <string-array name="fab_array">
+        <item>@string/filter_source</item>
+        <item>@string/filter_tag</item>
+        <item>@string/sort_time</item>
+        <item>@string/sort_shares</item>
+        <item>@string/clear_filter</item>
+    </string-array>
+    <integer-array name="res_array">
+        <item>@drawable/ic_sharp</item>
+        <item>@drawable/ic_tag</item>
+        <item>@drawable/ic_query_builder_white_24dp</item>
+        <item>@drawable/ic_share</item>
+    </integer-array>
+
+    <string-array name="alarm_time_array">
+        <item>6:30:0</item>
+        <item>11:30:0</item>
+        <item>18:30:0</item>
+    </string-array>
+
+
+    <string-array name="add_source_menu">
+        <item>@string/news</item>
+        <item>@string/web</item>
+        <item>@string/youtub</item>
+    </string-array>
+
+    <string name="choose_title">Choose one</string>
+    <string name="remove_confirm">Are you sure you want to remove \"%1$s\"?</string>
+    <string name="copy_url_toast">URL copied to clipboard</string>
+    <string name="drawer_open">Menu Open</string>
+    <string name="drawer_close">Menu Close</string>
+
+    <string name="source">Tags</string>
+    <string name="tag">Source</string>
+
+    <string name="notification_message">You have %1$s stories waiting for you, click here to open We Update You</string>
+
+    <string name="icon_desc">Ad icon</string>
+    <string name="image_desc">Ad image</string>
+    <string name="unit_id">e5b75c3cb31c425ebf17ada83d412a85</string>
+    <string name="banner_id">b195f8dd8ded45fe847ad89ed1d016da</string>
+
+    <string name="loading_video">Loading</string>
+    <string name="fabric_api_key">d8ffc7fd9e125b5e65d167df69025de1af0699b2</string>
+
+    <string name="toast_source_removed">Source Removed</string>
+    <string name="toast_source_edit">Source configuration changed</string>
+
+    <string name="tap_add_source_msg">Tap here to add sources...</string>
+
+    <string name="facebook_app_id">204932166630455</string>
+
+
+</resources>

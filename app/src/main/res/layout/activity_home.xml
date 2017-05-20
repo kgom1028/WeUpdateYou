@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <!--
+        <include
+            android:id="@+id/container_header"
+            layout="@layout/layout_actionbar"
+        />!-->
+         <include
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             layout="@layout/layout_toolbar_title"
+             />
+         <FrameLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/color_background">
+                <com.kgom.refresh.PullToRefreshRecyclerView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/newsList"
+                    >
+                </com.kgom.refresh.PullToRefreshRecyclerView>
+
+             <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
+                 xmlns:rfal="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/label_list_sample_rfal"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 rfal:rfal_frame_color="#000000"
+                 rfal:rfal_frame_alpha="0.5"
+                 >
+                 <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton
+                     xmlns:rfab="http://schemas.android.com/apk/res-auto"
+                     android:id="@+id/label_list_sample_rfab"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginBottom="15dp"
+                     rfab:rfab_size="normal"
+                     rfab:rfab_drawable="@drawable/ic_fab"
+                     rfab:rfab_color_normal="@color/fab_back_color"
+                     rfab:rfab_color_pressed="#263238"
+                     rfab:rfab_shadow_radius="7dp"
+                     rfab:rfab_shadow_color="#000000"
+                     rfab:rfab_shadow_dx="0dp"
+                     rfab:rfab_shadow_dy="3dp"
+                     />
+
+
+             </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+        <!-- Left Drawer -->
+        <LinearLayout
+            android:id="@+id/left_nav"
+            android:layout_width="@dimen/dimen_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/left_nav_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nav_back_color"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                />
+            <!-- you can have many more widgets here like buttons or labels -->
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+
+

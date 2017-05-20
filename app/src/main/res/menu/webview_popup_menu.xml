@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/menu_copy_clipboard"
+        android:title="@string/copy_to_clipboard" />
+    <item
+        android:id="@+id/menu_open_browser"
+        android:title="@string/open_browser" />
+    <item
+        android:id="@+id/menu_refresh_page"
+        android:title="@string/refresh_page" />
+    <item
+        android:id="@+id/find_page"
+        android:title="@string/find_page" />
+    <item
+        android:id="@+id/google_translate"
+        android:title="@string/google_translate" />
+
+</menu>

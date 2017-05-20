@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_color">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        layout="@layout/layout_toolbar"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/drawable_save_setting_background"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_250dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_250dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/news_image"
+                            android:layout_gravity="center_horizontal"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/drawable_dark_gradient"
+                            android:id="@+id/news_cover_view">
+
+                        </View>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/dimen_20sp"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginRight="@dimen/dimen_30dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp"
+                            android:text="Android Test Android Test Android Test Android Test Android Test"
+                            android:textColor="@color/article_title_color"
+                            android:layout_alignParentBottom="true"
+                            android:shadowColor="#FF464646"
+                            android:shadowDx="2.0"
+                            android:shadowDy="2.0"
+                            android:shadowRadius="2.0"
+                            android:id="@+id/news_title"
+                            />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:id="@+id/news_content"
+                        android:textColor="@color/article_content_color"
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textAlignment="viewStart"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+
+                        android:text="Android Test Android Test Android Test Android Test Android Test"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp">
+
+                        <TextView
+                            android:id="@+id/tag_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="2dp"
+                            android:background="@drawable/drawable_tag"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxWidth="@dimen/dimen_150dp"
+
+                            android:text="TechCrunch"
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/source_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:background="@drawable/drawable_source"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:maxWidth="@dimen/dimen_100dp"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="2dp"
+                            android:text="Facebook"
+                            android:textColor="@color/color_white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_marginBottom="@dimen/dimen_50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/hot_ic"
+                            android:layout_width="10dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/hot_ic"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/share_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="10 shares"
+                            android:textColor="@color/color_share_gray"
+                            android:textSize="@dimen/dimen_12sp" />
+
+                        <TextView
+                            android:id="@+id/time_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="10 days ago"
+                            android:textColor="@color/color_share_gray"
+                            android:textSize="@dimen/dimen_12sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ad_container"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:background="@drawable/drawable_read_more"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:id="@+id/read_more_btn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:gravity="center"
+                    android:text = "@string/read_more"
+                    android:shadowColor="#FF464646"
+                    android:shadowDx="4.0"
+                    android:shadowDy="4.0"
+                    android:shadowRadius="4.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>
